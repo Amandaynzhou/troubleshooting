@@ -25,4 +25,12 @@ import pycocotools._mask as _mask
 upgrade numpy 1.15.4 to 1.16.0
 
 #### install other requirements
-```  pip install --proxy=http://proxy.cse.cuhk.edu.hk:8000/ -r requirement.txt```
+```  
+pip install --proxy=http://proxy.cse.cuhk.edu.hk:8000/ -r requirement.txt
+pip --proxy=http://proxy.cse.cuhk.edu.hk:8000/ install scikit-image
+
+```
+
+#### Miscellaneous
+-check fold size `du -sh`
+-check store quota ` quota -s`
