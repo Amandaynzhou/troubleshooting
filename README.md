@@ -1,15 +1,14 @@
 # virtualenv-server
 记录在server创建venv环境过程,方便以后使用
 
-  '''git config --global http.proxy http://proxy.cse.cuhk.edu.hk:8000/
+'''bash
+    git config --global http.proxy http://proxy.cse.cuhk.edu.hk:8000/
+    git clone xxxx...
+    virtualenv --no-site-packages --python=python3.6 pytorch1.0
+    pip install --proxy=http://proxy.cse.cuhk.edu.hk:8000/ package-name
+'''
 
-  git clone xxxx...
 
-  virtualenv --no-site-packages --python=python3.6 pytorch1.0
-
-  pip install --proxy=http://proxy.cse.cuhk.edu.hk:8000/ package-name
-
-  '''
 ** may need to set cuda path in env
 
 #### set cocoapi
