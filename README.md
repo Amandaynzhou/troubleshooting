@@ -11,7 +11,9 @@ some hints when creating a new venv/repo in server
 -may need to set cuda path in env
 
 #### set cocoapi
-  ```git clone https://github.com/cocodataset/cocoapi.git
+
+  ```bash
+  git clone https://github.com/cocodataset/cocoapi.git
 ```
 
 when face
