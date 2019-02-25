@@ -34,6 +34,8 @@ pip --proxy=http://proxy.cse.cuhk.edu.hk:8000/ install scikit-image
 #### Miscellaneous
 check fold size `du -sh`
 
-check store quota ` quota -s`
+check store quota in server ` quota -s`
 
-if gcc<4.9, maskrcnn-benchmark will have 'segment dump' problem. To upgrade gcc, check http://luiarthur.github.io/gccinstall
+if gcc<4.9, maskrcnn-benchmark will have 'segment dump' problem. If you do not have root, but want to upgrade gcc version, check http://luiarthur.github.io/gccinstall
+
+If UnicodeDecodeError accured when collect env, a pytorch bug need to be fixed before run the code. Check:https://github.com/facebookresearch/maskrcnn-benchmark/issues/265
