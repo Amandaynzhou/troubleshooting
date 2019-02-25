@@ -32,5 +32,8 @@ pip --proxy=http://proxy.cse.cuhk.edu.hk:8000/ install scikit-image
 ```
 
 #### Miscellaneous
--check fold size `du -sh`
--check store quota ` quota -s`
+check fold size `du -sh`
+
+check store quota ` quota -s`
+
+if gcc<4.9, maskrcnn-benchmark will have 'segment dump' problem. To upgrade gcc, check http://luiarthur.github.io/gccinstall
