@@ -39,3 +39,7 @@ check store quota in server ` quota -s`
 if gcc<4.9, maskrcnn-benchmark will have 'segment dump' problem. If you do not have root, but want to upgrade gcc version, check http://luiarthur.github.io/gccinstall
 
 If UnicodeDecodeError accured when collect env, a pytorch bug need to be fixed before run the code. Check:https://github.com/facebookresearch/maskrcnn-benchmark/issues/265
+
+slurm
+`squeue -u USERNAME`
+http://bicmr.pku.edu.cn/~wenzw/pages/slurm.html
