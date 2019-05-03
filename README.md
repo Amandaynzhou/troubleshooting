@@ -24,6 +24,15 @@ import pycocotools._mask as _mask
 `ValueError: numpy.ufunc size changed, may indicate binary incompatibility. Expected 216 from C header, got 192 from PyObject`
 upgrade numpy 1.15.4 to 1.16.0
 
+when face 
+```
+pycocotools/_mask.c:4:20: fatal error: Python.h: No such file or directory
+```
+install the specific version of python-dev, such as 
+```
+sudo apt-get install python3.6-dev
+```
+
 #### install other requirements
 ```  
 pip install --proxy=http://proxy.cse.cuhk.edu.hk:8000/ -r requirement.txt
