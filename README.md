@@ -55,3 +55,9 @@ http://bicmr.pku.edu.cn/~wenzw/pages/slurm.html
 
 wget with proxy
 `wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tgz -e use_proxy=yes -e https_proxy=your proxy`
+
+####　how to install deepin-wine wechat on ubuntu:
+https://forum.ubuntu.org.cn/viewtopic.php?f=73&p=3217021&sid=6194a64cefc1f4c5ac43dcd8729ca3c8
+change 18~19 to 18~22rc0
+see in https://mirrors.aliyun.com/deepin/pool/non-free/d/deepin-wine/
+
