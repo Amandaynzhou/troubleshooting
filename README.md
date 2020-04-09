@@ -61,3 +61,8 @@ https://forum.ubuntu.org.cn/viewtopic.php?f=73&p=3217021&sid=6194a64cefc1f4c5ac4
 change 18~19 ----->  18~22rc0
 see in https://mirrors.aliyun.com/deepin/pool/non-free/d/deepin-wine/
 
+### distributed training
+when face :RuntimeError: CUDA error: no kernel image is available for execution on the device (ROIAlign_forward_cuda..........
+It may because the gpu arch currently is different from that when build setup
+Check https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md#common-installation-issues
+To solve this issue, rebuild and add 'os.environ["TORCH_CUDA_ARCH_LIST"] = "5.2;6.1;7.0"# match the gpu arch!!! GTX TITANX -->5.2, GTX1080Ti,nvidia titian xp-->6.1; Nvidia titian v-->7.0' in setup.py
