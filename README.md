@@ -1,4 +1,4 @@
-# virtualenv-server
+# Troubleshooting
 some hints when creating a new venv/repo in server
 
 ```bash
