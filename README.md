@@ -85,4 +85,19 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 
 ```
 5.make -j8
+！！
+fatal error: opencv2/core/utils/tls.hpp: No such file or directory
+ #include <opencv2/core/utils/tls.hpp>
+ https://github.com/opencv/opencv_contrib/issues/1301
+ https://www.cnblogs.com/arxive/p/11778731.html
+ 
+ can't find these file
+//#include "features2d/test/test_detectors_regression.impl.hpp"
+//#include "features2d/test/test_descriptors_regression.impl.hpp"
+
+then modify the relative path to absolute path
+ e.g.
+#include "/data/raid/project/software/opencv4.1.2/modules/features2d/test/test_detectors_regression.impl.hpp"
+#include "/data/raid/project/software/opencv4.1.2/modules/features2d/test/test_descriptors_regression.impl.hpp"
+
 6.make install
