@@ -66,3 +66,22 @@ when face :RuntimeError: CUDA error: no kernel image is available for execution 
 It may because the gpu arch currently is different from that when build setup
 Check https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md#common-installation-issues
 To solve this issue, rebuild and add 'os.environ["TORCH_CUDA_ARCH_LIST"] = "5.2;6.1;7.0"# match the gpu arch!!! GTX TITANX -->5.2, GTX1080Ti,nvidia titian xp-->6.1; Nvidia titian v-->7.0' in setup.py
+
+### build opencv
+1. wget the .zip file
+2. git clone opencv-contrib 
+3. unzip, mkdir build
+4. cd build
+```
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+      -D CMAKE_INSTALL_PREFIX=your local path \
+      -D INSTALL_C_EXAMPLES=ON \
+      -D INSTALL_PYTHON_EXAMPLES=ON \
+      -D WITH_TBB=ON \
+      -D WITH_V4L=ON \
+      -D WITH_OPENGL=ON \
+      -D OPENCV_EXTRA_MODULES_PATH=[your opencv contrib path]../../opencv_contrib/modules \
+      -D BUILD_EXAMPLES=ON ..
+
+```
+5.make -j8
