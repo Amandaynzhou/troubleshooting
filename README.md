@@ -85,3 +85,4 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 
 ```
 5.make -j8
+6.make install
