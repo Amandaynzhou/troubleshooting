@@ -104,7 +104,9 @@ then modify the relative path to absolute path
 ### Install Horovod
 
 1. install openmpi
+
     a. download https://www.open-mpi.org/software/ompi/v4.0/
+    
     b. 
 ```
 gunzip -c openmpi-4.0.3.tar.gz | tar xf -
@@ -113,12 +115,14 @@ cd openmpi-4.0.3
 <...lots of output...>
 make all install
 ```
-2. Install NCCL 2 
+c. Install NCCL 2 
+```
 git clone https://github.com/NVIDIA/nccl
 make src.build CUDA_HOME=<path to cuda install>
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/XXX/nccl-master/build/lib
 source bashrc
-    
-3.Install Horovod
+```
+d.Install Horovod
+```
     HOROVOD_NCCL_HOME=/home/ynzhou/cgc/nccl/build HOROVOD_GPU_ALLREDUCE=NCCL HOROVOD_GPU_BROADCAST=NCCL HOROVOD_CUDA_HOME=/usr/local/cuda-10.1 pip install --no-cache-dir horovod
-
+```
